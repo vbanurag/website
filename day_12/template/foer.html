@@ -1,0 +1,28 @@
+<head>
+<body>
+
+<p> aburajdgejwv gedgwejgui gewgdf weg</p>
+
+
+{% for i in writer %}
+{{i.lang_name.name}} , {{i.book}}</br>
+{% endfor %}
+
+
+<br>
+<h> Student Description </h><br>
+<h>-------------------------------</h><br>
+
+{% for i in stu_val %}
+{{i.stu_name}} , {{i.stu_course}}   {{i.stu_des}}</br>
+{% endfor %}
+
+
+<br>
+{% for item in lang %}
+	{% if forloop.item == 'c' %}
+		<b> {{item}} </b></br>
+	{% else %}
+		{{forloop.counter}}. {{item}} </br>
+	{% endif %}
+{% endfor %}
